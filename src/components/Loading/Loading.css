@@ -1,0 +1,49 @@
+.loading-background {
+    box-shadow: 5px 5px 5px 5px; 
+
+    position: fixed;
+    background-color:white;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    padding-top: 400px;
+}
+
+.loading-text {
+    display: inline-block;
+  
+    font-size: 50px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.char {
+    display: inline-block;
+    font-size: 80px;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+#char1 {
+    color: pink
+}
+
+#char2 {
+    color: lightpink
+}
+#char3 {
+    color: tan
+}
+#char4 {
+    color: lightsalmon
+}
+#char5 {
+    color: orange
+}
+#char6 {
+    color: red
+}
+#char7 {
+    color: brown;
+}

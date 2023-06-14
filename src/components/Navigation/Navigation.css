@@ -1,0 +1,29 @@
+.name-card { 
+    z-index: 10;
+    position: fixed;
+    width: 102%;
+    mix-blend-mode: screen;
+    background-color: white;
+    margin-bottom: 150px;
+}
+
+.intro-icon {
+    padding-right: 30px;
+    padding-top: 20px;
+}
+
+.name {
+    margin-left: 10px;
+    padding-top: 5px;
+    text-align: left;
+    font-size: 40px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.icons {
+
+    text-align: right;
+    font-size: 30px;
+
+}
+

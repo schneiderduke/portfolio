@@ -1,0 +1,29 @@
+.flip-card {
+    cursor:pointer; 
+    position:relative;
+    width:600px;
+    height:300px;
+}
+
+.flip-panel {
+    border-radius: 2%;
+    opacity:0.8;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    background: white;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    box-shadow: 1px 1px 1px 1px;
+}
+
+.card-front {
+    position:relative;
+    background:white;
+}
+
+.card-back {
+    background-color: orange;
+}
