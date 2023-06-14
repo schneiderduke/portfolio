@@ -3,7 +3,7 @@ import WorkCard from './WorkCard/WorkCard';
 
 function WorkHistory() {
     return (
-        <div>
+        <div id='work-history'>
 
             <WorkCard name={'Envestnet'} className="card"/>
             <hr></hr>

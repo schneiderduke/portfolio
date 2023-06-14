@@ -1,28 +1,15 @@
 import './Navigation.css'
 import { faLinkedinIn, faSpotify, faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faEnvelope, faPhone, faArrowLeft, faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import { faEnvelope, faPhone } from '@fortawesome/free-solid-svg-icons'
 import { useEffect, useRef } from 'react'
 import { gsap, Power1 } from 'gsap-trial'
 function Navigation() {
     const phoneIcon = useRef(), mailIcon = useRef(), spotifyIcon = useRef(), linkedInIcon = useRef(), gitHubIcon = useRef();
     useEffect(() => {
-        
         [phoneIcon, mailIcon, spotifyIcon, linkedInIcon, gitHubIcon].forEach((icon) => {
-            icon.current.addEventListener('mouseenter', (e) => {
-                console.log(icon)
-                gsap.to(icon.current, {
-                    scale: 1.3,
-                    duration: 0.3,     
-                    ease: Power1.easeInOut,
-                })   
-            });
-            icon.current.addEventListener('mouseleave', (e) => {
-                gsap.to(icon.current, {
-                    scale: 1,
-                    duration: 0.3,
-                })   
-            });
+            icon.current.addEventListener('mouseenter', (e) => { gsap.to(icon.current, { scale: 1.3, duration: 0.3, ease: Power1.easeInOut})});
+            icon.current.addEventListener('mouseleave', (e) => { gsap.to(icon.current, { scale: 1, duration: 0.3})});
         })
         gsap.to('.name-card', 1, { y: 10,delay: 3 })
     })

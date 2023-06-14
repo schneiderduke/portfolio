@@ -1,5 +1,5 @@
 import './App.css';
-import Welcome from './components/Welcome/welcome';
+import Welcome from './components/Welcome/Welcome';
 import './cursor.js';
 import { useRef, useEffect } from 'react'
 import initializeCursor from './cursor.js';
@@ -7,8 +7,9 @@ import Loading from './components/Loading/Loading'
 import Navigation from './components/Navigation/Navigation';
 
 function App() {
+  const cursor = useRef(), cursorInner = useRef();
   useEffect(() => {
-    initializeCursor();
+    initializeCursor(cursor, cursorInner);
   })
 
   return (
@@ -16,14 +17,8 @@ function App() {
       <Loading />
       <Navigation />
       <Welcome />
-      <div className="cursor"></div>
-      <div className="cursor-inner"></div>
-  
-      {/* <div className="hand">
-        <FontAwesomeIcon className="icon" icon={faHandBackFist} />
-      </div> */}
-      {/* <Navigation /> */}
-      
+      <div ref={cursor} className="cursor"></div>
+      <div ref={cursorInner} className="cursor-inner"></div>   
     </div>
   );
 }

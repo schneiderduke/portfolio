@@ -3,7 +3,7 @@
 body {
   height: 100vh;
   overscroll-behavior: none;
- 
+  cursor: none;
   justify-content: center;
   align-items: center;
 
